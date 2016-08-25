@@ -15,10 +15,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Playlists" />
-        <activity android:name=".Player" />
-        <activity android:name=".Albums" />
-        <activity android:name=".Settings"></activity>
+        <activity android:name=".Playlists" android:label="@string/playlists" />
+        <activity android:name=".Player" android:label="@string/player"/>
+        <activity android:name=".Albums" android:label="@string/albums" />
+        <activity android:name=".Settings" android:label="@string/settings"/>
     </application>
 
 </manifest>
