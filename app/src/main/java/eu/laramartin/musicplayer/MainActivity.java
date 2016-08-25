@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
     final View.OnClickListener albumsTextViewOnClickListener = new View.OnClickListener(){
         public void onClick(final View v){
-            Toast.makeText(MainActivity.this, "albums clicked", Toast.LENGTH_SHORT).show();
+            openAlbumsList(albumsTextView);
         }
     };
 
