@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
     };
 
     public void openAlbumsList(View view) {
-        Intent intent = new Intent(this, Albums.class);
+        Intent intent = new Intent(this, AlbumsActivity.class);
         startActivity(intent);
     }
 
