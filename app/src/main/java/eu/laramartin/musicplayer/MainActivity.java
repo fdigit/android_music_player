@@ -1,11 +1,10 @@
 package eu.laramartin.musicplayer;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,8 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        playerTextView = (TextView) findViewById(R.id.menuPlaylists);
-        playlistsTextView = (TextView) findViewById(R.id.menuPlayer);
+        playerTextView = (TextView) findViewById(R.id.menuPlayer);
+        playlistsTextView = (TextView) findViewById(R.id.menuPlaylists);
         albumsTextView = (TextView) findViewById(R.id.menuAlbums);
         settingsTextView = (TextView) findViewById(R.id.menuSettings);
 
