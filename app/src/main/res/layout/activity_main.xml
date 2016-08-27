@@ -10,41 +10,112 @@
     android:orientation="vertical"
     android:background="#FBF8EF">
 
-    <TextView
-        android:id="@+id/menuPlayer"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_headset_black_24dp"
-        android:text="@string/player" />
+        android:orientation="horizontal">
+        
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                
+                <TextView
+                    android:id="@+id/menuPlayer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_headset_black_24dp"
+                    android:text="@string/player"
+                    style="@style/menuItemText"/>
+            </android.support.v7.widget.CardView>
 
-    <TextView
-        android:id="@+id/menuPlaylists"
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/menuPlaylists"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_playlist_play_black_24dp"
+                    android:text="@string/playlists" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_playlist_play_black_24dp"
-        android:text="@string/playlists" />
+        android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/menuAlbums"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_library_books_black_24dp"
-        android:text="@string/albums" />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/menuSettings"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:gravity="center_vertical"
-        android:drawableLeft="@drawable/ic_settings_black_24dp"
-        android:text="@string/settings" />
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/menuAlbums"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_library_books_black_24dp"
+                    android:text="@string/albums" />
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/menuSettings"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:drawableLeft="@drawable/ic_settings_black_24dp"
+                    android:text="@string/settings" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
 
 </LinearLayout>
