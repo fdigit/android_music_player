@@ -28,5 +28,6 @@ public class PlayerActivity extends AppCompatActivity {
     public void openMenu(View view) {
         Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
+        this.finish();
     }
 }
