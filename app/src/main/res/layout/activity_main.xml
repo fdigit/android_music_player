@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
@@ -23,17 +24,35 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/menuPlayer"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                
-                <TextView
-                    android:id="@+id/menuPlayer"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:drawableLeft="@drawable/ic_headset_black_24dp"
-                    android:text="@string/player"
-                    style="@style/menuItemText"/>
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_headset_black_24dp"
+                        android:layout_marginTop="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/player"
+                        style="@style/menuItemText"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
@@ -45,19 +64,39 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/menuPlaylists"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/menuPlaylists"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:drawableLeft="@drawable/ic_playlist_play_black_24dp"
-                    android:text="@string/playlists" />
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_playlist_play_black_24dp"
+                        android:layout_marginTop="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/playlists"
+                        style="@style/menuItemText"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
-        
+
     </LinearLayout>
 
     <LinearLayout
@@ -73,15 +112,35 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/menuAlbums"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-                <TextView
-                    android:id="@+id/menuAlbums"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="8dp">
+
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:drawableLeft="@drawable/ic_library_books_black_24dp"
-                    android:text="@string/albums" />
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_library_books_black_24dp"
+                        android:layout_marginTop="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/albums"
+                        style="@style/menuItemText"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
+
             </android.support.v7.widget.CardView>
 
         </LinearLayout>
@@ -93,16 +152,34 @@
             android:orientation="vertical">
 
             <android.support.v7.widget.CardView
+                android:id="@+id/menuSettings"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                app:cardCornerRadius="2dp"
+                app:cardElevation="8dp">
 
-                <TextView
-                    android:id="@+id/menuSettings"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:gravity="center_vertical"
-                    android:drawableLeft="@drawable/ic_settings_black_24dp"
-                    android:text="@string/settings" />
+                    android:orientation="vertical">
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_settings_black_24dp"
+                        android:layout_marginTop="16dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="@string/settings"
+                        style="@style/menuItemText"
+                        android:textAlignment="center"/>
+                </LinearLayout>
+
 
             </android.support.v7.widget.CardView>
 

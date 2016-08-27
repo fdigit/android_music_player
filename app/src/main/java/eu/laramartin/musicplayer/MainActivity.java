@@ -3,54 +3,54 @@ package eu.laramartin.musicplayer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.CardView;
 import android.view.View;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    TextView playerTextView;
-    TextView playlistsTextView;
-    TextView albumsTextView;
-    TextView settingsTextView;
+    CardView playerCardView;
+    CardView playlistsCardView;
+    CardView albumsCardView;
+    CardView settingsCardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        playerTextView = (TextView) findViewById(R.id.menuPlayer);
-        playlistsTextView = (TextView) findViewById(R.id.menuPlaylists);
-        albumsTextView = (TextView) findViewById(R.id.menuAlbums);
-        settingsTextView = (TextView) findViewById(R.id.menuSettings);
+        playerCardView = (CardView) findViewById(R.id.menuPlayer);
+        playlistsCardView = (CardView) findViewById(R.id.menuPlaylists);
+        albumsCardView = (CardView) findViewById(R.id.menuAlbums);
+        settingsCardView = (CardView) findViewById(R.id.menuSettings);
 
-        playerTextView.setOnClickListener(playerTextViewOnClickListener);
-        playlistsTextView.setOnClickListener(playlistsTextViewOnClickListener);
-        albumsTextView.setOnClickListener(albumsTextViewOnClickListener);
-        settingsTextView.setOnClickListener(settingsTextViewOnClickListener);
+        playerCardView.setOnClickListener(playerTextViewOnClickListener);
+        playlistsCardView.setOnClickListener(playlistsTextViewOnClickListener);
+        albumsCardView.setOnClickListener(albumsTextViewOnClickListener);
+        settingsCardView.setOnClickListener(settingsTextViewOnClickListener);
 
     }
 
     final View.OnClickListener playlistsTextViewOnClickListener = new View.OnClickListener(){
         public void onClick(final View v){
-            openPlaylistsList(playlistsTextView);
+            openPlaylistsList(playlistsCardView);
         }
     };
 
     final View.OnClickListener playerTextViewOnClickListener = new View.OnClickListener(){
         public void onClick(final View v){
-            openPlayerList(playerTextView);
+            openPlayerList(playerCardView);
         }
     };
 
     final View.OnClickListener albumsTextViewOnClickListener = new View.OnClickListener(){
         public void onClick(final View v){
-            openAlbumsList(albumsTextView);
+            openAlbumsList(albumsCardView);
         }
     };
 
     final View.OnClickListener settingsTextViewOnClickListener = new View.OnClickListener(){
         public void onClick(final View v){
-            openSettingsList(settingsTextView);
+            openSettingsList(settingsCardView);
         }
     };
 

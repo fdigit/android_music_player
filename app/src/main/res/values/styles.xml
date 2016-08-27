@@ -23,6 +23,5 @@
 
     <style name="menuItemText">
         <item name="android:textSize">24sp</item>
-        <item name="android:layout_marginLeft">16dp</item>
     </style>
 </resources>
