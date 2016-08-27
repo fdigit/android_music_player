@@ -14,4 +14,10 @@
         <item name="android:layout_marginBottom">16dp</item>
     </style>
 
+    <style name="playlistItem">
+        <item name="android:textSize">18sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
 </resources>
