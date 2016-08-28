@@ -7,4 +7,9 @@
     <string name="showSongLyrics">Show song lyrics</string>
     <string name="continueFromLastSong">Play from last song</string>
     <string name="anonymousData">Send anonymous usage data</string>
+    <string name="menuDescription">Menu of the app. Here the user can choose what he needs.</string>
+    <string name="playerAlbumSample">Album of the year - hispter singer.</string>
+    <string name="playerDescription">Music player. Here the user can listen to his music.</string>
+    <string name="albumsDescription">Albums list. Here the user can see his albums and details.</string>
+    <string name="playlistsDescription">Playlists. Here the user can see, edit and choose to play a custom playlist.</string>
 </resources>

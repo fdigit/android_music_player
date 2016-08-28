@@ -14,6 +14,13 @@
 
         <TextView
             android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/playlistsDescription"
+            style="@style/description"/>
+        
+        <TextView
+            android:layout_width="match_parent"
             android:layout_height="50dp"
             android:text="playlist"
             android:gravity="center_vertical"
